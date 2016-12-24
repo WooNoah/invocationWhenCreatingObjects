@@ -13,7 +13,7 @@
 *在外部调用init(不是initWithFrame)的时候，会先进到override的init方法内，然后在init的作用域内，调用`[super init]`方法，此时会调用`initWithFrame`方法*
 
 ####总结
-- **`initialize`:在该类第一次调用的时候会执行该方法、且**只执行一次****
+- **`initialize`:在该类第一次调用的时候会执行该方法、且*只执行一次*。**
 - **当外部调用`init`方法的时候，会默认调用`initWithFrame`方法**
 - **当外部调用`initWithFrame`方法的时候，是不会调用`init`方法的**
 - **alloc：外部调用`alloc`方法的时候，会默认先调用`allocWithZone`方法**
